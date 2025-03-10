@@ -1,0 +1,337 @@
+---
+import ankit from "../assets/ankit-tiwari.png";
+import panther from "../assets/panther.png";
+import inder from "../assets/inder.png";
+---
+
+
+<div class="mt-16 px-4 max-w-6xl mx-auto relative">
+  <div
+    class="absolute -top-10 -right-10 w-64 h-64 bg-gradient-to-br from-purple-300/30 to-indigo-300/30 rounded-full blur-3xl -z-10"
+  >
+  </div>
+  <div
+    class="absolute -bottom-10 -left-10 w-64 h-64 bg-gradient-to-br from-amber-300/30 to-pink-300/30 rounded-full blur-3xl -z-10"
+  >
+  </div>
+
+  <div class="text-center mb-12 relative">
+    <div class="inline-block relative">
+      <span
+        class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 blur-lg opacity-70 -z-10"
+      ></span>
+      <h3
+        class="relative px-8 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full text-sm font-bold tracking-wider shadow-lg z-10"
+      >
+        FEATURED ARTISTS
+      </h3>
+    </div>
+    <div
+      class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-3 rounded-full"
+    >
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+    <div class="group">
+      <div
+        class="relative h-full bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-10px_rgba(107,70,193,0.2)] border border-indigo-100 transform transition-all duration-500 hover:shadow-[0_20px_70px_-10px_rgba(107,70,193,0.4)] hover:-translate-y-2"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 bg-gradient-to-bl from-indigo-600/10 to-purple-600/10 rounded-full"
+        >
+        </div>
+        <div
+          class="absolute top-0 right-0 w-20 h-20 -mr-10 -mt-10 bg-gradient-to-bl from-indigo-600/10 to-purple-600/10 rounded-full"
+        >
+        </div>
+
+        <div class="pt-6 px-6">
+          <div
+            class="relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg"
+          >
+            <img
+              src={ankit.src}
+              alt="Ankit Tiwari"
+              class="w-full h-full object-cover bg-purple-200"
+            />
+
+            <div
+              class="absolute top-4 right-4 w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center rotate-12 opacity-80"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19.952 1.651a.75.75 0 01.298.599V16.303a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.403-4.909l2.311-.66a1.5 1.5 0 001.088-1.442V6.994l-9 2.572v9.737a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.402-4.909l2.31-.66a1.5 1.5 0 001.088-1.442V9.017 5.25a.75.75 0 01.544-.721l10.5-3a.75.75 0 01.658.122z"
+                ></path>
+              </svg>
+            </div>
+
+            <div
+              class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/80 via-black/50 to-transparent"
+            >
+              <span
+                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/20 text-white backdrop-blur-sm border border-white/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 mr-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Classical Vocalist
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-xl text-gray-800">Ankit Tiwari</h4>
+            <span
+              class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full"
+              >Day 1</span
+            >
+          </div>
+
+          <p class="text-gray-600 mt-2 text-sm">
+            Award-winning composer and vocalist known for his mastery of
+            Carnatic and Hindustani classical music, as well as his
+            contributions to Bollywood.
+          </p>
+
+          <div class="flex items-center mt-4">
+            <a
+              href="https://www.instagram.com/ankittiwari"
+              target="_blank"
+              class="text-indigo-600 flex items-center text-sm hover:text-indigo-800 transition-colors"
+            >
+              <svg
+                class="w-4 h-4 mr-1"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+              @ankittiwari
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div
+        class="relative h-full bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-10px_rgba(245,158,11,0.2)] border border-amber-100 transform transition-all duration-500 hover:shadow-[0_20px_70px_-10px_rgba(245,158,11,0.4)] hover:-translate-y-2"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 bg-gradient-to-bl from-amber-500/10 to-orange-500/10 rounded-full"
+        >
+        </div>
+        <div
+          class="absolute top-0 right-0 w-20 h-20 -mr-10 -mt-10 bg-gradient-to-bl from-amber-500/10 to-orange-500/10 rounded-full"
+        >
+        </div>
+        <div class="pt-6 px-6">
+          <div
+            class="relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg"
+          >
+
+            <img
+              src={panther.src}
+              alt="Panther"
+              class="w-full h-full object-cover bg-amber-200"
+            />
+            <div
+              class="absolute top-4 right-4 w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center rotate-12 opacity-80"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"
+                ></path>
+                <path
+                  d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z"
+                ></path>
+              </svg>
+            </div>
+
+            <div
+              class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/80 via-black/50 to-transparent"
+            >
+              <span
+                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/20 text-white backdrop-blur-sm border border-white/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 mr-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Rapper & Lyricist
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-xl text-gray-800">Panther</h4>
+            <span
+              class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full"
+              >Day 2</span
+            >
+          </div>
+
+          <p class="text-gray-600 mt-2 text-sm">
+            One of India's most influential hip-hop artists who revolutionized
+            the gully rap scene. Known for his authentic street poetry and
+            social commentary through music.
+          </p>
+
+          <div class="flex items-center mt-4">
+            <a
+              href="https://www.instagram.com/buildingpanther"
+              target="_blank"
+              class="text-amber-600 flex items-center text-sm hover:text-amber-800 transition-colors"
+            >
+              <svg
+                class="w-4 h-4 mr-1"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+              @buildingpanther
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div
+        class="relative h-full bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-10px_rgba(219,39,119,0.2)] border border-pink-100 transform transition-all duration-500 hover:shadow-[0_20px_70px_-10px_rgba(219,39,119,0.4)] hover:-translate-y-2"
+      >
+        <div
+          class="absolute top-0 right-0 w-32 h-32 -mr-16 -mt-16 bg-gradient-to-bl from-pink-500/10 to-rose-500/10 rounded-full"
+        >
+        </div>
+        <div
+          class="absolute top-0 right-0 w-20 h-20 -mr-10 -mt-10 bg-gradient-to-bl from-pink-500/10 to-rose-500/10 rounded-full"
+        >
+        </div>
+
+        <div class="pt-6 px-6">
+          <div
+            class="relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg"
+          >
+            <img
+              src={inder.src}
+              alt="Inder Sahani"
+              class="w-full h-full object-cover bg-pink-200"
+            />
+            <div
+              class="absolute top-4 right-4 w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center rotate-12 opacity-80"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM18.584 5.106a.75.75 0 011.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 11-1.06-1.06 8.25 8.25 0 000-11.668.75.75 0 010-1.06z"
+                ></path>
+                <path
+                  d="M15.932 7.757a.75.75 0 011.061 0 6 6 0 010 8.486.75.75 0 01-1.06-1.061 4.5 4.5 0 000-6.364.75.75 0 010-1.06z"
+                ></path>
+              </svg>
+            </div>
+
+            <div
+              class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/80 via-black/50 to-transparent"
+            >
+              <span
+                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/20 text-white backdrop-blur-sm border border-white/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 mr-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Stand-up Comedian
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-xl text-gray-800">Inder Sahani</h4>
+            <span
+              class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded-full"
+              >Day 3</span
+            >
+          </div>
+
+          <p class="text-gray-600 mt-2 text-sm">
+            Multi-talented artist known for his soulful Punjabi vocals and
+            charismatic stage presence. A true cultural icon who has bridged
+            regional and mainstream music.
+          </p>
+
+          <div class="flex items-center mt-4">
+            <a
+              href="https://www.instagram.com/inder.sahani1"
+              target="_blank"
+              class="text-pink-600 flex items-center text-sm hover:text-pink-800 transition-colors"
+            >
+              <svg
+                class="w-4 h-4 mr-1"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+              @inder.sahani1
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

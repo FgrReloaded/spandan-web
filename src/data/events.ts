@@ -12,6 +12,7 @@ export type EventGuideline = {
 
 export type Event = {
   id: string;
+  poster?: string;
   title: string;
   category: string;
   quote?: string;

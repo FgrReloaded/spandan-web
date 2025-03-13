@@ -1,0 +1,420 @@
+---
+interface Event {
+  id: number;
+  day: number;
+  name: string;
+  venue: string;
+  time?: string;
+  date?: string;
+}
+
+const events: Event[] = [
+  {
+    id: 1,
+    day: 1,
+    name: "Inaugural",
+    venue: "EC Conference Hall",
+    date: "April 4, 2025",
+    time: "9:00 AM",
+  },
+  {
+    id: 2,
+    day: 1,
+    name: "Colours of India : Saptarangi Utsav",
+    venue: "EC Conference Hall",
+    time: "10:30 AM",
+  },
+  {
+    id: 3,
+    day: 1,
+    name: "Drama Competition",
+    venue: "EC Conference Hall",
+    time: "12:00 PM",
+  },
+  {
+    id: 4,
+    day: 1,
+    name: "Battle Of Bands : Rhythm Riot",
+    venue: "Auditorium",
+    time: "2:00 PM",
+  },
+  {
+    id: 5,
+    day: 1,
+    name: "Upcycle Utsav",
+    venue: "AB-1, 409",
+    time: "11:00 AM",
+  },
+  {
+    id: 6,
+    day: 1,
+    name: "Battle Of Wits",
+    venue: "Aarambh - CSED",
+    time: "3:30 PM",
+  },
+  {
+    id: 7,
+    day: 1,
+    name: "Battle Of Singing : Swaranirmaya",
+    venue: "EC Conference Hall",
+    time: "4:00 PM",
+  },
+  {
+    id: 8,
+    day: 1,
+    name: "Sanskriti Sangam: A Craft Fair",
+    venue: "Auditorium",
+    time: "10:00 AM",
+  },
+  {
+    id: 9,
+    day: 1,
+    name: "Palm Bloom & Nail Artistry: A Mehendi & Nail Competition",
+    venue: "AB - II",
+    time: "1:00 PM",
+  },
+  {
+    id: 10,
+    day: 1,
+    name: "Jalwa-E-Culture: Fashion Show",
+    venue: "Auditorium",
+    time: "5:00 PM",
+  },
+  {
+    id: 11,
+    day: 1,
+    name: "Mr. Inder Sahni",
+    venue: "Auditorium",
+    time: "7:00 PM",
+  },
+  {
+    id: 12,
+    day: 1,
+    name: "Panther Performance",
+    venue: "KC Ground",
+    time: "8:00 PM",
+  },
+  {
+    id: 13,
+    day: 1,
+    name: "Shutter Showdown",
+    venue: "GLA Campus",
+    time: "All Day",
+  },
+  {
+    id: 14,
+    day: 1,
+    name: "Abhivyakti: Short film making competition",
+    venue: "GLA Campus",
+    time: "All Day",
+  },
+  {
+    id: 15,
+    day: 2,
+    name: "Master Chief",
+    venue: "Natraj Club",
+    date: "April 5, 2025",
+    time: "10:00 AM",
+  },
+  {
+    id: 16,
+    day: 2,
+    name: "Rangrez 2025",
+    venue: "Udyamee Chaupal-CSED",
+    time: "11:30 AM",
+  },
+  {
+    id: 17,
+    day: 2,
+    name: "ECHO : Engage, Challenge, Harness, Orate",
+    venue: "IBM Conference Hall",
+    time: "1:00 PM",
+  },
+  {
+    id: 18,
+    day: 2,
+    name: "Battle Of Dance : Nrityanjali",
+    venue: "Auditorium",
+    time: "3:00 PM",
+  },
+  { id: 19, day: 2, name: "Photobooth", venue: "KC Ground", time: "All Day" },
+  {
+    id: 20,
+    day: 2,
+    name: "Kavya Sandhya",
+    venue: "Auditorium",
+    time: "5:30 PM",
+  },
+  {
+    id: 21,
+    day: 2,
+    name: "Shutter Showdown",
+    venue: "GLA Campus",
+    time: "All Day",
+  },
+  {
+    id: 22,
+    day: 2,
+    name: "Abhivyakti: Short film making competition",
+    venue: "GLA Campus",
+    time: "All Day",
+  },
+  {
+    id: 23,
+    day: 2,
+    name: "Celebrity Night",
+    venue: "KC Ground",
+    time: "8:00 PM",
+  },
+];
+
+const day1Events = events.filter((event) => event.day === 1);
+const day2Events = events.filter((event) => event.day === 2);
+
+const venueColors: Record<string, string> = {
+  "EC Conference Hall": "indigo",
+  Auditorium: "purple",
+  "AB-1, 409": "pink",
+  "Aarambh - CSED": "blue",
+  "AB - II": "amber",
+  "KC Ground": "rose",
+  "GLA Campus": "emerald",
+  "Natraj Club": "cyan",
+  "Udyamee Chaupal-CSED": "teal",
+  "IBM Conference Hall": "violet",
+};
+
+const getColorClass = (venue: string) => {
+  const baseVenue = venue.split(":")[0].trim();
+  const color = venueColors[baseVenue] || "gray";
+  return {
+    bg: `bg-${color}-100`,
+    border: `border-${color}-300`,
+    text: `text-${color}-800`,
+    dot: `bg-${color}-500`,
+  };
+};
+---
+
+<section id="schedule" class="py-24 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div
+      class="absolute -top-24 -left-24 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-16">
+      <div class="inline-block relative mb-3">
+        <span
+          class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 blur-lg opacity-70 -z-10"
+        ></span>
+        <h3
+          class="relative px-8 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full text-sm font-bold tracking-wider shadow-lg z-10"
+        >
+          EVENT SCHEDULE
+        </h3>
+      </div>
+      <h2 class="text-5xl font-bold mb-4 uppercase tracking-wider">
+        Timeline of Events
+      </h2>
+      <div
+        class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mb-6"
+      >
+      </div>
+      <p class="max-w-2xl mx-auto text-gray-600">
+        Mark your calendar and plan your Spandan 2K25 experience with our
+        comprehensive event schedule
+      </p>
+    </div>
+
+    <div class="flex justify-center mb-10 space-x-4">
+      <button
+        class="day-filter px-6 py-3 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all"
+        data-day="all">All Events</button
+      >
+      <button
+        class="day-filter px-6 py-3 bg-white text-gray-700 font-medium rounded-full shadow-md hover:shadow-lg transition-all"
+        data-day="1">Day 1</button
+      >
+      <button
+        class="day-filter px-6 py-3 bg-white text-gray-700 font-medium rounded-full shadow-md hover:shadow-lg transition-all"
+        data-day="2">Day 2</button
+      >
+    </div>
+
+    <div class="max-w-5xl mx-auto mb-10 flex flex-wrap justify-center gap-3">
+      {
+        Object.entries(venueColors).map(([venue, color]) => (
+          <div class="flex items-center px-3 py-1 rounded-full bg-white shadow-sm border border-gray-100">
+            <span class={`w-3 h-3 rounded-full bg-${color}-500 mr-2`} />
+            <span class="text-xs font-medium text-gray-700">{venue}</span>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="max-w-5xl mx-auto">
+      <div class="timeline-day day-1">
+        <div class="flex items-center mb-6">
+          <div
+            class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold shadow-lg"
+          >
+            1
+          </div>
+          <h3 class="ml-4 text-2xl font-bold text-gray-800">
+            Day 1 - April 4, 2025
+          </h3>
+        </div>
+
+        <div
+          class="relative pl-8 border-l-4 border-indigo-200 ml-6 space-y-10 pb-10"
+        >
+          {
+            day1Events.map((event) => {
+              const colorClass = getColorClass(event.venue);
+              return (
+                <div class="relative">
+                  <div
+                    class={`absolute -left-10 w-6 h-6 rounded-full ${colorClass.dot} border-4 border-white shadow-md`}
+                  />
+                  <div
+                    class={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl ${colorClass.border} border transform transition-all duration-300 hover:-translate-y-1`}
+                  >
+                    <div class="p-6">
+                      <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          {event.name}
+                        </h4>
+                        <span
+                          class={`px-3 py-1 rounded-full text-xs font-semibold ${colorClass.bg} ${colorClass.text}`}
+                        >
+                          {event.venue}
+                        </span>
+                      </div>
+                      <div class="flex items-center text-gray-600 text-sm mt-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-4 w-4 mr-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        {event.time}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+
+      <div class="timeline-day day-2">
+        <div class="flex items-center mb-6 mt-16">
+          <div
+            class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold shadow-lg"
+          >
+            2
+          </div>
+          <h3 class="ml-4 text-2xl font-bold text-gray-800">
+            Day 2 - April 5, 2025
+          </h3>
+        </div>
+
+        <div class="relative pl-8 border-l-4 border-purple-200 ml-6 space-y-10">
+          {
+            day2Events.map((event) => {
+              const colorClass = getColorClass(event.venue);
+              return (
+                <div class="relative">
+                  <div
+                    class={`absolute -left-10 w-6 h-6 rounded-full ${colorClass.dot} border-4 border-white shadow-md`}
+                  />
+                  <div
+                    class={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl ${colorClass.border} border transform transition-all duration-300 hover:-translate-y-1`}
+                  >
+                    <div class="p-6">
+                      <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          {event.name}
+                        </h4>
+                        <span
+                          class={`px-3 py-1 rounded-full text-xs font-semibold ${colorClass.bg} ${colorClass.text}`}
+                        >
+                          {event.venue}
+                        </span>
+                      </div>
+                      <div class="flex items-center text-gray-600 text-sm mt-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-4 w-4 mr-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        {event.time}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterButtons = document.querySelectorAll(".day-filter");
+      const timelineDays = document.querySelectorAll(".timeline-day");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("bg-indigo-600", "text-white");
+            btn.classList.add("bg-white", "text-gray-700");
+          });
+          button.classList.remove("bg-white", "text-gray-700");
+          button.classList.add("bg-indigo-600", "text-white");
+
+          const day = button.getAttribute("data-day");
+          timelineDays.forEach((timeline) => {
+            const htmlTimeline = timeline as HTMLElement;
+            if (day === "all") {
+              htmlTimeline.style.display = "block";
+            } else {
+              if (timeline.classList.contains(`day-${day}`)) {
+                htmlTimeline.style.display = "block";
+              } else {
+                htmlTimeline.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</section>

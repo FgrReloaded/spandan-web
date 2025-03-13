@@ -1,0 +1,82 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="relative bg-white border-t border-gray-100 py-8">
+  <div class="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
+    <div
+      class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYyYzguODQgMCAxNiA3LjE2IDE2IDE2cy03LjE2IDE2LTE2IDE2djJjOS45NCAwIDE4LTguMDYgMTgtMTh6IiBmaWxsPSIjNjM2NmYxIiBmaWxsLW9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTMwIDMwYzAtNi42My01LjM3LTEyLTEyLTEydjJjNS41MiAwIDEwIDQuNDggMTAgMTBzLTQuNDggMTAtMTAgMTB2MmM2LjYzIDAgMTItNS4zNyAxMi0xMnoiIGZpbGw9IiM2MzY2ZjEiIGZpbGwtb3BhY2l0eT0iLjIiLz48L2c+PC9zdmc+')]"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 relative">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-4">
+        <h2 class="text-2xl font-extrabold tracking-tight">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+          >
+            SPANDAN
+          </span>
+          <span class="text-gray-800 font-light">2K25</span>
+        </h2>
+        <div class="h-6 w-px bg-gray-200 hidden md:block"></div>
+        <span class="text-gray-500 text-sm mt-1 md:mt-0">
+          &copy; {currentYear} Annual Cultural Fest of GLA University
+        </span>
+      </div>
+
+      <div class="mt-6 md:mt-0">
+        <ul
+          class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2 text-sm"
+        >
+          <li>
+            <a
+              href="#"
+              class="text-gray-600 hover:text-indigo-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all hover:after:w-full"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-indigo-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all hover:after:w-full"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#events"
+              class="text-gray-600 hover:text-indigo-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all hover:after:w-full"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-gray-600 hover:text-indigo-600 transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all hover:after:w-full"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-6 relative">
+      <div class="absolute left-1/2 transform -translate-x-1/2 -top-3">
+        <div
+          class="w-24 h-0.5 bg-gradient-to-r from-transparent via-indigo-500 to-transparent"
+        >
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-400 pt-2">
+        Made with ♪ passion for music and arts
+      </p>
+    </div>
+  </div>
+</footer>

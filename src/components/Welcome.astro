@@ -4,11 +4,16 @@ import Hero from "./Hero.astro";
 import Navbar from "./Navbar.astro";
 import FeaturedArtist from "./FeaturedArtist.astro";
 import Lineup from "./Lineup.astro";
+import EventsSection from "./EventsSection.astro";
+import TimelineSection from "./TimelineSection.astro";
+import Footer from "./Footer.astro";
 ---
 
 <main class="bg-white text-gray-800">
 	<Navbar />
-	<section class="relative h-screen flex md:pt-24 pt-12 justify-center overflow-hidden">
+	<section
+		class="relative h-screen flex md:pt-24 pt-12 justify-center overflow-hidden"
+	>
 		<div class="absolute inset-0 z-0 bg-gradient-to-b from-blue-50 to-white">
 			<div class="absolute inset-0 flex items-center justify-center opacity-20">
 				<div class="sound-wave">
@@ -58,4 +63,9 @@ import Lineup from "./Lineup.astro";
 			<FeaturedArtist />
 		</div>
 	</section>
+
+	<EventsSection />
+
+	<TimelineSection />
+	<Footer />
 </main>

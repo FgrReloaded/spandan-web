@@ -1,4 +1,3 @@
-import { Event } from './events';
 export type EventGuideline = {
   index: string;
   title: string;
@@ -13,6 +12,11 @@ export type Event = {
   description: string;
   guidelines: EventGuideline[];
   conclusionText?: string;
+  coordinators?: {
+    index: string;
+    name: string;
+    phone: string;
+  }[];
   theme?: {
     gradientFrom: string;
     gradientTo: string;
@@ -26,7 +30,7 @@ export const events: Event[] = [
     id: "photobooth-contest",
     title: "Photobooth & Photography Contest",
     category: "PHOTOGRAPHY EXPERIENCE",
-    poster: "../assets/photoboothp.jpg",
+    poster: "/photoboothp.jpg",
     quote: "Photography is the story we fail to put into words!!!",
     description: "Step into the world of creativity and capture unforgettable moments with DRISHTI – The Photography Club at Spandan 2025! We bring you an exciting Photo Booth experience and an exhilarating Photography Competition that will test your skills, vision, and storytelling through the lens.",
     guidelines: [
@@ -57,28 +61,6 @@ export const events: Event[] = [
       }
     ],
     conclusionText: "Don't miss this chance to showcase your photography skills and take home memories that will last a lifetime!",
-    coordinators: [
-      {
-        index: "I",
-        name: "Milan Awasthi",
-        phone: "+91 9452115253"
-      },
-      {
-        index: "II",
-        name: "Satvik Gupta",
-        phone: "+91 95328 30295"
-      },
-      {
-        index: "III",
-        name: "Ayush Chauhan",
-        phone: "+91 90451 33410"
-      },
-      {
-        index: "IV",
-        name: "Uday Gupta",
-        phone: "+91 9314554397"
-      }
-    ],
     theme: {
       gradientFrom: "violet-500",
       gradientTo: "indigo-600",
@@ -91,7 +73,7 @@ export const events: Event[] = [
     id: "battle-of-dance",
     title: "Battle of Dance: Nrityanjali",
     category: "DANCE COMPETITION",
-    poster: "../assets/dancep.jpg",
+    poster: "/dancep.jpg",
     quote: "'Dance is the hidden language of the soul' – Martha Graham",
     description: "Get ready to step, spin, and stun at the Battle of Dance – Spandan 2K25! This electrifying showdown is where rhythm meets passion, and dancers battle it out for the ultimate title. Whether you groove to hip-hop, glide through contemporary, or bring your own unique style, this is your stage to shine! Feel the adrenaline, own the spotlight, and make every move count! Expect high-energy performances, breathtaking routines, and fierce competition—all in one unforgettable night!",
     guidelines: [
@@ -132,28 +114,6 @@ export const events: Event[] = [
       }
     ],
     conclusionText: "The rhythm is calling—are you ready to answer? Bring your best moves, set the stage on fire, and make history at Spandan 2K25!",
-    coordinators: [
-      {
-        index: "I",
-        name: "Satyajeet Sahoo",
-        phone: "+91 9793963395"
-      },
-      {
-        index: "II",
-        name: "Shivang shukla",
-        phone: "+91 96759 88088"
-      },
-      {
-        index: "III",
-        name: "Uttkarsh sonkar",
-        phone: "+91 7394941550"
-      },
-      {
-        index: "IV",
-        name: "Jayesh",
-        phone: "+91 8267806338"
-      }
-    ],
     theme: {
       gradientFrom: "fuchsia-600",
       gradientTo: "purple-500",
@@ -166,7 +126,7 @@ export const events: Event[] = [
     id: "kavya-sandhya",
     title: "KAVYA SANDHYA-SPANDAN 2K25",
     category: "POETRY COMPETITION",
-    poster: "../assets/kavyap.jpg",
+    poster: "/kavyap.jpg",
     quote: "Poetry Club, GLA University – Where Words Dance and Dreams Whisper!!!",
     description: "Welcome to the realm where Emotions Find Melody, Thoughts Paint Visions, and Words Weave Magic! At the Poetry Club of GLA University, we believe in the alchemy of poetry – where ink meets paper, and souls connect. Each year, we bring to life the enchanting evening of Kavya Sandhya during Spandan, the Annual Cultural Fest of GLA University. This isn't just an event; it's an experience where words breathe, and verses sing. Inter-university poets compete, battling with metaphors and emotions, vying for exciting prize money and certificates.",
     guidelines: [
@@ -202,28 +162,6 @@ export const events: Event[] = [
       }
     ],
     conclusionText: "But the magic doesn't end there! Kavya Sandhya is graced by the presence of celebrated poets, witty comedians, and poet-comedians whose words dance between laughter and thought, leaving the audience mesmerized and inspired. If you're a poet yearning to be heard, an admirer of art, or someone who simply craves an evening of soulful entertainment, Kavya Sandhya is where you need to be. Come, be a part of the magic. Let your words echo, and your dreams take flight!",
-    coordinators: [
-      {
-        index: "I",
-        name: "Madhav Gaur",
-        phone: "+91 63971 68054"
-      },
-      {
-        index: "II",
-        name: "Saubhagya Sharma",
-        phone: "+91 7459919945"
-      },
-      {
-        index: "III",
-        name: "Harshit Tewari",
-        phone: "+91 81157 36343"
-      },
-      {
-        index: "IV",
-        name: "Rimjhim Goyal",
-        phone: "+91 90278 02078"
-      }
-    ],
     theme: {
       gradientFrom: "amber-600",
       gradientTo: "orange-500",
@@ -236,7 +174,7 @@ export const events: Event[] = [
     id: "shutter-showdown",
     title: "SHUTTER SHOWDOWN – FREEZE THE FEST!",
     category: "PHOTOGRAPHY COMPETITION",
-    poster: "../assets/shutterp.jpg",
+    poster: "/shutterp.jpg",
     quote: "Capture the Magic, Frame the Unforgettable!!!",
     description: "Dristi Club invites you to Spandan's ultimate photography battle! From raw emotions to breathtaking moments, this is your chance to turn time into timeless art. Every shot tells a story—will yours be the one that stands out?",
     guidelines: [
@@ -296,7 +234,7 @@ export const events: Event[] = [
     id: "abhivyakti-film",
     title: "ABHIVYAKTI – SHORT FILM MAKING COMPETITION",
     category: "FILMMAKING",
-    poster: "../assets/abhivyaktip.jpg",
+    poster: "/abhivyaktip.jpg",
     quote: "Lights, Camera, Expression!!!",
     description: "Pratibha Club presents ABHIVYAKTI, where your vision takes center stage! This is your chance to craft compelling stories, ignite emotions, and showcase your film-making brilliance. Whether you're a budding director or a passionate storyteller, let your creativity unfold on the screen!",
     guidelines: [
@@ -376,7 +314,7 @@ export const events: Event[] = [
     id: "masterchef-gla",
     title: "MASTERCHEF GLA",
     category: "CULINARY COMPETITION",
-    poster: "../assets/masterchefp.jpg",
+    poster: "/masterchefp.jpg",
     quote: "Unleash Your Culinary Genius!!!",
     description: "Do you have the skills to turn ingredients into masterpieces? MasterChef GLA is back, challenging food lovers to showcase their creativity, innovation, and passion for cooking! It's more than a competition—it's a culinary adventure where plating meets storytelling, and flavors leave a lasting impression! Step into the kitchen and unleash your culinary creativity as you compete in high-stakes cooking challenges, transforming ideas into extraordinary dishes. Impress the judges with your innovation and presentation, showcasing artistic plating and impeccable food styling. Gain valuable insights from culinary experts through interactive Q&A sessions, where you'll learn exclusive tips and tricks to refine your skills. As the competition heats up, only the most talented chef will rise to claim the prestigious title of MasterChef GLA!",
     guidelines: [
@@ -426,7 +364,7 @@ export const events: Event[] = [
     id: "rangrez-2025",
     title: "RANGREZ 2025 – ART COMPETITION",
     category: "ART SHOWCASE",
-    poster: "../assets/rangrezp.jpg",
+    poster: "/rangrezp.jpg",
     quote: "An artist is not just a creator; they are a dreamer who colors the world with their vision!!!",
     description: "Under the vibrant celebration of Spandan 2025, the Kaleidos Club of GLA University presents Rangrez 2025—a tribute to the power of art and imagination. The term \"Rangrez\" originates from Persian, meaning a dyer—one who weaves magic with colors. But beyond its literal sense, Rangrez is the soul of an artist, infusing life and meaning into every stroke of their creation. It symbolizes love, enlightenment, and transformation—just as Krishna was to Mirabai or a mentor is to a seeker. Inspired by Sufi philosophy and artistic passion, Rangrez 2025 invites you to create art that speaks to the soul. Let your brush dance with colors, your imagination run wild, and your art tell a story!",
     guidelines: [
@@ -491,7 +429,7 @@ export const events: Event[] = [
     id: "echo-2025",
     title: "ECHO 2K25 – Engage | Challenge | Harness | Orate",
     category: "PUBLIC SPEAKING",
-    poster: "../assets/echop.jpg",
+    // poster: "/echop.jpg",
     quote: "Where words ignite, with prevails, and knowledge conquers!!!",
     description: "Let Literario Club host you to Step into ECHO, the ultimate battle of oratory, and intellect. From legendary speeches to uncovering lies, simplifying the complex to rapid-fire showdowns—do you have what it takes to win?",
     guidelines: [
@@ -556,7 +494,7 @@ export const events: Event[] = [
     id: "mehendi-nail-art",
     title: "Palm Bloom & Nail Artistry",
     category: "CREATIVE ARTS",
-    poster: "../assets/artistryp.jpg",
+    poster: "/artistryp.jpg",
     quote: "Get ready to turn hands into canvases and nails into masterpieces!!!",
     description: "Unleash your creativity and artistic flair in the Mehendi & Nail Art Competition at Spandan 2K25, GLA University, Mathura! Whether you master the intricate elegance of Mehendi or craft mesmerizing nail art, this is your moment to shine and leave an unforgettable mark.",
     guidelines: [
@@ -661,7 +599,7 @@ export const events: Event[] = [
     id: "battle-of-bands",
     title: "Battle of Bands: Rhythm Riot",
     category: "MUSIC SHOWCASE",
-    poster: "../assets/bandsp.jpg",
+    poster: "/bandsp.jpg",
     quote: "Strings will scream! Drums will thunder! The stage will set itself on fire!",
     description: "Are you ready to make the world feel your sound? Can your music make the crowd go wild? Do you have the power to set the stage on fire? If you believe in the magic of your sound, then Battle of Bands is your moment to dominate the stage and own the night! Get ready for an electrifying showdown where the best bands bring their A-game, competing for the ultimate rockstar title! Witness raw energy, unmatched passion, and mind-blowing performances as bands battle it out to prove who rules the stage.",
     guidelines: [
@@ -731,7 +669,7 @@ export const events: Event[] = [
     id: "battle-of-singing",
     title: "Battle of Singing: Swaranirmaya",
     category: "MUSIC COMPETITION",
-    poster: "../assets/singingp.jpg",
+    poster: "/singingp.jpg",
     quote: "Step into the spotlight and let your voice soar!!!",
     description: "Whether you're a seasoned performer or an emerging talent, this is your moment to own the stage, captivate the audience, and let your voice shine. From soulful ballads to electrifying anthems, this competition isn't just about winning—it's about celebrating your passion for music! So, are you ready to hit the high notes and steal the show? The mic is waiting—let the music begin!",
     guidelines: [
@@ -801,7 +739,7 @@ export const events: Event[] = [
     id: "sanskriti-sangam",
     title: "Sanskriti Sangam – A Celebration of Indian Craftsmanship",
     category: "CRAFT FAIR",
-    poster: "../assets/sangamp.jpg",
+    poster: "/sangamp.jpg",
     quote: "Art is the heartbeat of culture, and craftsmanship is its soul!!!",
     description: "Hosted by AIKYAM – The Cultural Club, Sanskriti Sangam is an annual craft fair that brings to life the rich and diverse traditions of Indian craftsmanship. Step into a world of vibrant handlooms, intricate pottery, exquisite textiles, stunning jewelry, mesmerizing paintings, and much more, as skilled artisans from across India gather to showcase their masterpieces. This celebration of art, culture, and heritage invites you to experience the beauty and intricacies of handcrafted works while supporting local artisans and their timeless skills. Whether you are an art enthusiast, a student, or a member of the local community, Sanskriti Sangam offers something for everyone.",
     guidelines: [
@@ -876,7 +814,7 @@ export const events: Event[] = [
     id: "fashion-show",
     title: "JALWA-E-COUTURE: FASHION SHOW - SPANDAN 2K25",
     category: "FASHION & STYLE",
-    poster: "../assets/fashionp.jpg",
+    poster: "/fashionp.jpg",
     quote: "Fashion isn't just about trends—it's about making a statement!",
     description: "Fashion is not just about trends; it's about making a statement. Get ready to mesmerize the audience with your charisma and elegance at Spandan 2K25! GLA University, Mathura, invites you to a Fashion Show where creativity meets glamour. This is your chance to showcase your personality, embrace your uniqueness, and walk the ramp like a celebrity. Whether you love bold styles or elegant designs, this event is for everyone who believes fashion is a way of life. Get ready to dazzle and make a lasting impression!",
     guidelines: [
@@ -971,7 +909,7 @@ export const events: Event[] = [
     id: "battle-of-wits",
     title: "BATTLE OF WITS – SPANDAN 2K25",
     category: "DEBATE COMPETITION",
-    poster: "../assets/witsp.jpg",
+    poster: "/witsp.jpg",
     quote: "Where words cut deeper than swords!!!",
     description: "Think you have the brains, boldness, and brilliance to outsmart your opponents? Welcome to Battle of Wits—the ultimate intellectual showdown at Spandan 2K25! This isn't just a debate—it's a battlefield of logic, strategy, and wit! Step up, challenge perspectives, counter with confidence, and leave the audience in awe.",
     guidelines: [
@@ -1041,7 +979,7 @@ export const events: Event[] = [
     id: "colors-of-india",
     title: "Colors of India: Saptarangi Utsav",
     category: "CULTURAL SHOWCASE",
-    poster: "../assets/indiap.jpg",
+    poster: "/indiap.jpg",
     quote: "A TAPESTRY OF TRADITION, CULTURE & DIVERSITY",
     description: "India is a world in itself—woven with colors, cultures, and countless stories!!! Kicking off the much-awaited Spandan 2K25, Colors of India sets the stage for an unforgettable cultural journey. From the crimson reds of bustling markets to the golden glow of ancient temples, every hue in India tells a story of heritage, emotion, and celebration.",
     guidelines: [
@@ -1091,7 +1029,7 @@ export const events: Event[] = [
     id: "drama-competition",
     title: "SPANDAN DRAMA COMPETITION 2K25",
     category: "PERFORMING ARTS",
-    poster: "../assets/dramap.jpg",
+    // poster: "",
     quote: "Drama is like a dream—an illusion that may not be real, but its impact is deeply felt!!!",
     description: "If you have the passion to captivate, inspire, and entertain with your dramatic skills, this stage is yours. Spandan, GLAU invites you to an electrifying Drama Competition—a celebration of storytelling, emotions, and creativity. Whether it's a gripping tragedy, a thought-provoking social satire, or a hilarious comedy, bring your best act and mesmerize the audience!",
     guidelines: [

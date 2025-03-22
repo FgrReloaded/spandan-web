@@ -11,62 +11,84 @@ import Mentors from "./Mentors.astro";
 ---
 
 <main class="bg-white text-gray-800">
-	<Navbar />
-	<section
-		class="relative h-screen flex md:pt-24 pt-12 justify-center overflow-hidden"
-	>
-		<div class="absolute inset-0 z-0 bg-gradient-to-b from-blue-50 to-white">
-			<div class="absolute inset-0 flex items-center justify-center opacity-20">
-				<div class="sound-wave">
-					<span></span><span></span><span></span><span></span><span></span>
-					<span></span><span></span><span></span><span></span><span></span>
-				</div>
-			</div>
-			<div
-				class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYyYzguODQgMCAxNiA3LjE2IDE2IDE2cy03LjE2IDE2LTE2IDE2djJjOS45NCAwIDE4LTguMDYgMTgtMTh6IiBmaWxsPSIjNjM2NmYxIiBmaWxsLW9wYWNpdHk9Ii4xIi8+PHBhdGggZD0iTTMwIDMwYzAtNi42My01LjM3LTEyLTEyLTEydjJjNS41MiAwIDEwIDQuNDggMTAgMTBzLTQuNDggMTAtMTAgMTB2MmM2LjYzIDAgMTItNS4zNyAxMi0xMnoiIGZpbGw9IiM2MzY2ZjEiIGZpbGwtb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] opacity-10"
-			>
-			</div>
-		</div>
-		<Hero />
-		<div
-			class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
-		>
-			<a href="#about" class="text-indigo-600 hover:text-indigo-800">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-8 w-8"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-				</svg>
-			</a>
-		</div>
-	</section>
+  <Navbar />
+  <section
+    class="relative h-screen flex md:pt-24 pt-12 justify-center overflow-hidden"
+  >
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-blue-50 to-white">
+      <div class="absolute inset-0 flex items-center justify-center opacity-20">
+        <div class="sound-wave">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYyYzguODQgMCAxNiA3LjE2IDE2IDE2cy03LjE2IDE2LTE2IDE2djJjOS45NCAwIDE4LTguMDYgMTgtMTh6IiBmaWxsPSIjNjM2NmYxIiBmaWxsLW9wYWNpdHk9Ii4xIi8+PHBhdGggZD0iTTMwIDMwYzAtNi42My01LjM3LTEyLTEyLTEydjJjNS41MiAwIDEwIDQuNDggMTAgMTBzLTQuNDggMTAtMTAgMTB2MmM2LjYzIDAgMTItNS4zNyAxMi0xMnoiIGZpbGw9IiM2MzY2ZjEiIGZpbGwtb3BhY2l0eT0iLjEiLz48L2c+PC9zdmc+')] opacity-10"
+      >
+      </div>
+    </div>
+    <Hero />
+    <div
+      class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+    >
+      <a href="#about" class="text-indigo-600 hover:text-indigo-800">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
 
-	<About />
-	<section id="lineup" class="py-20 bg-white">
-		<div class="container mx-auto px-4">
-			<div class="text-center mb-16">
-				<h2 class="text-5xl font-bold mb-4 uppercase tracking-wider">Lineup</h2>
-				<div
-					class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
-				>
-				</div>
-			</div>
+  <About />
+  <section id="lineup" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold mb-4 uppercase tracking-wider">Lineup</h2>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"
+        >
+        </div>
+      </div>
 
-			<Lineup />
-			<FeaturedArtist />
-		</div>
-	</section>
+      <Lineup />
+      <FeaturedArtist />
+    </div>
+  </section>
 
-	<EventsSection />
-	<Mentors/>
-	<TimelineSection />
-	<Footer />
+  <EventsSection />
+  <Mentors />
+  <TimelineSection />
+  <Footer />
 </main>
+
+<script>
+  window.onload = () => {
+    window.location.href = "#";
+  };
+
+  document
+    .querySelectorAll<HTMLAnchorElement>('a[href^="#"]')
+    .forEach((anchor) => {
+      anchor.addEventListener("click", (e: Event) => {
+        e.preventDefault();
+
+        const targetId = anchor.getAttribute("href");
+        if (targetId) {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      });
+    });
+</script>

@@ -2,8 +2,8 @@
 
 ---
 
-<nav
-  class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b py-2 border-gray-100"
+<nav id="navbar"
+  class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b py-2 border-gray-100   "
 >
   <div class="container mx-auto px-12">
     <div class="flex justify-between items-center h-16">
@@ -40,14 +40,51 @@
           ></span>
         </div>
       </div>
-
-      <div class="hidden md:block">
+      <div class="hidden md:block space-x-2 text-gray-700 ">
         <a
-          href="#register"
+          href="#home"
+          class="px-6 py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
           class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          class="px-6 py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+          class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+        >
+          About
+        </a>
+        <a
+          href="#artists"
+          class="px-6 py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+          class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+        >
+          Artist
+        </a>
+        <a
+          href="#events"
+          class="px-6 py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+          class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+        >
+          Event
+        </a>
+        <a
+          href="#mentors"
+          class="px-6 py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+          class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+        >
+          Mentor
+        </a>
+        <a
+          href="https://forms.gle/d8JDDxQ6F5prktrm8"
+          class="register-btn px-6 py-2.5 font-extrabold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Register
         </a>
+        
       </div>
 
       <div class="md:hidden flex items-center">
@@ -76,12 +113,44 @@
   >
     <div class="container mx-auto px-4 py-3">
       <div class="mt-2">
+        <a
+          href="#home"
+          class="block py-2.5 font-extrabold text-gray-700 hover:text-indigo-600 "
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          class="block py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+        >
+          About
+        </a>
+        <a
+          href="#artists"
+          class="block py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+        >
+          Artist
+        </a>
+        <a
+          href="#events"
+          class="block py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+        >
+          Event
+        </a>
+        <a
+          href="#mentors"
+          class="block py-2.5 font-extrabold text-gray-700 hover:text-indigo-600"
+        >
+          Mentor
+        </a>
       <a
-        href="#register"
-        class="block text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-3 rounded-full font-medium tracking-wide shadow-lg transform transition-all duration-300 hover:shadow-xl hover:scale-[1.02] relative overflow-hidden"
+      href="https://forms.gle/d8JDDxQ6F5prktrm8"
+      class="block text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-3 rounded-full font-medium tracking-wide shadow-lg transform transition-all duration-300 hover:shadow-xl hover:scale-[1.02] relative overflow-hidden"
+      target="_blank"
+      rel="noopener noreferrer"
       >
-        <span class="relative z-10">Register Now</span>
-        <span class="absolute inset-0 bg-white/10 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
+      <span class="relative z-10">Register Now</span>
+      <span class="absolute inset-0 bg-white/10 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
       </a>
       </div>
     </div>
@@ -130,6 +199,7 @@
     opacity: 1;
     animation: shimmer 1.5s forwards;
   }
+
 
   @keyframes shimmer {
     0% {

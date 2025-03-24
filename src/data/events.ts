@@ -1029,7 +1029,7 @@ export const events: Event[] = [
     id: "drama-competition",
     title: "SPANDAN DRAMA COMPETITION 2K25",
     category: "PERFORMING ARTS",
-    // poster: "",
+    poster: "/dramap.jpeg",
     quote: "Drama is like a dream—an illusion that may not be real, but its impact is deeply felt!!!",
     description: "If you have the passion to captivate, inspire, and entertain with your dramatic skills, this stage is yours. Spandan, GLAU invites you to an electrifying Drama Competition—a celebration of storytelling, emotions, and creativity. Whether it's a gripping tragedy, a thought-provoking social satire, or a hilarious comedy, bring your best act and mesmerize the audience!",
     guidelines: [

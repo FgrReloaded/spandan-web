@@ -1,0 +1,124 @@
+---
+const mentors = [
+  { id: 1, name: "Ms. Niharika Singh", img: "/niharika.jpeg" },
+  { id: 2, name: "Dr. Toshit Jain", img: "/toshit.jpeg" },
+  { id: 3, name: "Dr. Sushmita Goswami", img: "/sushmita.jpg" },
+  { id: 4, name: "Dr Brijesh Goswami", img: "/brijesh.jpg" },
+  { id: 5, name: "Dr.Ruchika Kulshrestha", img: "/ruchika.jpg" },
+  { id: 6, name: "Dr Divya Gupta", img: "/divya.jpg" },
+  { id: 7, name: "Dr Neha Kumari", img: "/neha.jpg" },
+  { id: 8, name: "Dr. Reena Gupta", img: "/reena.jpg" },
+  { id: 9, name: "Dr Yogesh Murti", img: "/yogesh.jpg" },
+  { id: 10, name: "Dr. Deepak Kumar Tiwari", img: "/deepak.jpg" },
+  { id: 11, name: "Mr. Anmol Nagpal ", img: "/anmol.jpg" },
+  { id: 12, name: "Mr. Faizul Hasan", img: "/faizul.jpg" },
+];
+
+const featuredMentors = mentors.slice(0, 2);
+const otherMentors = mentors.slice(2);
+---
+
+<section id="mentors" class="py-20 bg-gradient-to-b from-indigo-50 to-white">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <!------------------- Section Header ------------------------------->
+    <div class="text-center mb-16">
+      <div class="inline-block mb-3">
+        <span class="text-sm font-semibold px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full">VISIONARY LEADERSHIP</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Mentors</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6 rounded-full"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        "The greatest leaders don't create followers, they create more leaders. Our mentors are here to inspire and empower your journey."
+      </p>
+    </div>
+
+    <!----------------Dean of Affairs---------------------- -->
+    <div class="mb-20">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl">
+        <div class="flex flex-col lg:flex-row">
+          <div class="lg:w-1/3 relative">
+            <img 
+              src="/dsw.jpeg" 
+              alt="Dr. Himanshu Sharma" 
+              class="w-full h-full object-cover object-center"
+            />
+            <div class="absolute inset-0 bg-indigo-900 opacity-10"></div>
+          </div>
+          <div class="lg:w-2/3 p-8 lg:p-12 flex flex-col justify-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Dr. Himanshu Sharma</h3>
+            <div class="w-16 h-1 bg-indigo-600 mb-6"></div>
+            <p class="text-indigo-600 font-semibold text-xl mb-4">Dean Students' Welfare</p>
+            <p class="text-gray-600 text-lg">
+              With over 20 years of experience in academic leadership, Dr. Himanshu Sharma has been instrumental in shaping our institution's vision and commitment to excellence in education.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- Featured Mentors---------------------- -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+      {featuredMentors.map((mentor) => (
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="flex flex-col sm:flex-row">
+            <div class="sm:w-2/5 relative">
+              <img
+                src={mentor.img}
+                alt={mentor.name}
+                class="w-{192} h-{192} object-cover aspect-[3/4] sm:aspect-auto"
+              />
+              <div class="absolute inset-0 bg-indigo-900 opacity-0 hover:opacity-10 transition-opacity"></div>
+            </div>
+            <div class="sm:w-3/5 p-6 sm:p-8 flex flex-col justify-center">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">{mentor.name}</h3>
+              <div class="w-12 h-1 bg-indigo-600 mb-4"></div>
+              <p class="text-gray-600">
+                A distinguished expert in their field, mentoring students with passion and dedication.
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Grid of Other Mentors -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-10">
+      {otherMentors.map((mentor) => (
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative overflow-hidden">
+            <img
+              src={mentor.img}
+              alt={mentor.name}
+              class="w-full aspect-[3/4] object-cover object-center transform group-hover:scale-105 transition duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-gray-800 group-hover:text-indigo-600 transition duration-300">{mentor.name}</h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  section {
+    animation: fadeIn 0.8s ease-out;
+  }
+</style>

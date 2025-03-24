@@ -173,13 +173,13 @@ const day2Events = events.filter((event) => event.day === 2);
 
 const venueColors: Record<string, string> = {
   "EC Conference Hall": "indigo",
-  Auditorium: "purple",
+  "Auditorium": "purple",
   "AB-1, 409": "pink",
-  "Aarambh - CSED": "blue",
+  "Aarambh - CSED": "red",
   "AB - II": "amber",
-  "KC Ground": "rose",
-  "GLA Campus": "emerald",
-  "Natraj Club": "cyan",
+  "KC Ground": "rose", 
+  "GLA Campus": "emerald", 
+  "Natraj Club": "cyan", 
   "Udyamee Chaupal-CSED": "teal",
   "IBM Conference Hall": "violet",
 };
@@ -194,6 +194,7 @@ const getColorClass = (venue: string) => {
     dot: `bg-${color}-500`,
   };
 };
+
 ---
 
 <section id="schedule" class="py-24 bg-white relative overflow-hidden">

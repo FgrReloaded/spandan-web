@@ -52,14 +52,14 @@ const otherMentors = mentors.slice(2);
             </p>
           </div>
         </div>
-        
       </div>
-          <!---------------------- Featured Mentors---------------------- -->
+
+      <!---------------------- Featured Mentors---------------------- -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20 mt-14">
         {featuredMentors.map((mentor) => (
           <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col sm:flex-row">
-              <div class="sm:w-2/5 relative ">
+              <div class="sm:w-2/5 relative">
                 <img
                   src={mentor.img}
                   alt={mentor.name}
@@ -83,45 +83,63 @@ const otherMentors = mentors.slice(2);
     <!-- Grid of Other Mentors -->
     <div class="mb-20">
       <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center justify-center">Meet Our Mentors</h2>
-    <p class=" text-xl  max-w-3xl mx-auto text-gray-600 mb-10 text-center justify-center ">Our mentors are here to guide you through your academic journey, providing you with the support and resources you need to succeed.</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-10">
-      
-      {otherMentors.map((mentor) => (
-        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-          <div class="relative overflow-hidden">
-            <img
-              src={mentor.img}
-              alt={mentor.name}
-              class="w-full aspect-[3/4] object-cover object-center transform group-hover:scale-105 transition duration-500"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <p class="text-xl max-w-3xl mx-auto text-gray-600 mb-10 text-center justify-center">
+        Our mentors are here to guide you through your academic journey, providing you with the support and resources you need to succeed.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-10">
+        {otherMentors.map((mentor) => (
+          <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            <div class="relative overflow-hidden">
+              <picture>
+                <source 
+                  media="(max-width: 640px)" 
+                  srcset={`${mentor.img}?w=400&h=533&fit=crop`}
+                />
+                <source 
+                  media="(max-width: 1024px)" 
+                  srcset={`${mentor.img}?w=600&h=800&fit=crop`}
+                />
+                <img
+                  src={mentor.img}
+                  alt={mentor.name}
+                  class="w-full h-auto max-h-[500px] object-cover object-center transform group-hover:scale-105 transition duration-500"
+                  width="300"
+                  height="400"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-gray-800 group-hover:text-indigo-600 transition duration-300">{mentor.name}</h3>
+            </div>
           </div>
-          <div class="p-5">
-            <h3 class="font-bold text-lg text-gray-800 group-hover:text-indigo-600 transition duration-300">{mentor.name}</h3>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </div>
 </section>
 
 <style>
+  /* Responsive image handling */
   @media (max-width: 640px) {
-    .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    img {
+      aspect-ratio: 3/4;
+      object-fit: cover;
     }
   }
-  html {
-    scroll-behavior: smooth;
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    img {
+      aspect-ratio: 2/3;
+      object-fit: cover;
+    }
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  section {
-    animation: fadeIn 0.8s ease-out;
+  @media (min-width: 1025px) {
+    img {
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
   }
 </style>

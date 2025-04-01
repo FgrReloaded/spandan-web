@@ -24,51 +24,53 @@ export type Event = {
   };
   icon?: string;
   secondaryIcon?: string;
+  registrationLink?: string;
 };
 export const events: Event[] = [
   {
-    id: "photobooth-contest",
-    title: "Photobooth & Photography Contest",
-    category: "PHOTOGRAPHY EXPERIENCE",
-    poster: "/photoboothp.jpg",
-    quote: "Photography is the story we fail to put into words!!!",
-    description: "Step into the world of creativity and capture unforgettable moments with DRISHTI – The Photography Club at Spandan 2025! We bring you an exciting Photo Booth experience and an exhilarating Photography Competition that will test your skills, vision, and storytelling through the lens.",
-    guidelines: [
+    "id": "photobooth-contest",
+    "title": "Photobooth & Photography Contest",
+    "category": "PHOTOGRAPHY EXPERIENCE",
+    "poster": "/photoboothp.jpg",
+    "quote": "Photography is the story we fail to put into words!!!",
+    "description": "Step into the world of creativity and capture unforgettable moments with DRISHTI – The Photography Club at Spandan 2025! We bring you an exciting Photo Booth experience and an exhilarating Photography Competition that will test your skills, vision, and storytelling through the lens.",
+    "guidelines": [
       {
-        index: "I",
-        title: "Photo Booth – Capture the Magic!",
-        description: "A special setup with aesthetic backgrounds, props, and professional lighting, where you can click mesmerizing pictures and create lasting memories."
+        "index": "I",
+        "title": "Photo Booth – Capture the Magic!",
+        "description": "A special setup with aesthetic backgrounds, props, and professional lighting, where you can click mesmerizing pictures and create lasting memories."
       },
       {
-        index: "II",
-        title: "Photography Competition – The Ultimate Challenge!",
-        description: "A thrilling contest where photographers compete to capture the best moments of Spandan and win exciting prizes!"
+        "index": "II",
+        "title": "Photography Competition – The Ultimate Challenge!",
+        "description": "A thrilling contest where photographers compete to capture the best moments of Spandan and win exciting prizes!"
       },
       {
-        index: "III",
-        title: "Date",
-        description: "5th April 2025 (Night Time)"
+        "index": "III",
+        "title": "Date",
+        "description": "5th April 2025 (Night Time)"
       },
       {
-        index: "IV",
-        title: "Venue",
-        description: "KC Ground"
+        "index": "IV",
+        "title": "Venue",
+        "description": "KC Ground"
       },
       {
-        index: "V",
-        title: "Highlights",
-        description: "Professional lighting & creative backdrops/ Fun props for unique pictures"
+        "index": "V",
+        "title": "Highlights",
+        "description": "Professional lighting & creative backdrops / Fun props for unique pictures"
       }
     ],
-    conclusionText: "Don't miss this chance to showcase your photography skills and take home memories that will last a lifetime!",
-    theme: {
-      gradientFrom: "violet-500",
-      gradientTo: "indigo-600",
-      textColor: "violet-700"
+    "conclusionText": "Don't miss this chance to showcase your photography skills and take home memories that will last a lifetime!",
+    "theme": {
+      "gradientFrom": "violet-500",
+      "gradientTo": "indigo-600",
+      "textColor": "violet-700"
     },
-    icon: `<path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />`,
-    secondaryIcon: `<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" /><path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />`
-  },
+    "icon": "<path fill-rule=\"evenodd\" d=\"M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z\" clip-rule=\"evenodd\" />",
+    "secondaryIcon": "<path d=\"M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z\" /><path fill-rule=\"evenodd\" d=\"M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z\" clip-rule=\"evenodd\" />",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSdjfhJLKsdhjfksdhfKJSHF/viewform"
+  },  
   {
     id: "battle-of-dance",
     title: "Battle of Dance: Nrityanjali",
@@ -120,7 +122,8 @@ export const events: Event[] = [
       textColor: "fuchsia-700"
     },
     icon: `<path d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />`,
-    secondaryIcon: `<path d="M12 4.929l-2.122 2.121c-.317.318-.483.716-.505 1.125A2.99 2.99 0 018 10a2.99 2.99 0 01-1.373-.325c-.409-.022-.807-.188-1.125-.505L3.515 7.184A7 7 0 0012 4.929zm3.707-.707a7 7 0 00-7.97 1.677L9.879 8.04c.024.016.045.035.068.054.023-.019.044-.038.068-.054l2.122-2.121zM5 12a3 3 0 110-6 3 3 0 010 6zm7 0a3 3 0 110-6 3 3 0 010 6zm7 0a3 3 0 110-6 3 3 0 010 6z" />`
+    secondaryIcon: `<path d="M12 4.929l-2.122 2.121c-.317.318-.483.716-.505 1.125A2.99 2.99 0 018 10a2.99 2.99 0 01-1.373-.325c-.409-.022-.807-.188-1.125-.505L3.515 7.184A7 7 0 0012 4.929zm3.707-.707a7 7 0 00-7.97 1.677L9.879 8.04c.024.016.045.035.068.054.023-.019.044-.038.068-.054l2.122-2.121zM5 12a3 3 0 110-6 3 3 0 010 6zm7 0a3 3 0 110-6 3 3 0 010 6zm7 0a3 3 0 110-6 3 3 0 010 6z" />`,
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSe_RelascpKbf75dlMxwooqgZMN77s1bNMR2Bne-A3kLe7VUA/viewform?usp=send_form"
   },
   {
     id: "kavya-sandhya",
@@ -168,7 +171,8 @@ export const events: Event[] = [
       textColor: "amber-700"
     },
     icon: `<path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />`,
-    secondaryIcon: `<path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z" clip-rule="evenodd" />`
+    secondaryIcon: `<path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z" clip-rule="evenodd" />`,
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScaXlcqDiAuJMchyrYa4XpfKK35xRC9oAUj7xd9bbMABLkr5w/viewform"
   },
   {
     id: "shutter-showdown",
@@ -228,7 +232,8 @@ export const events: Event[] = [
       textColor: "teal-700"
     },
     icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />`,
-    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />`
+    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdGiGmTwdAEWqln6BDZ1UdWPQc2KTOaawsMJYSwM1sxx9wmSA/viewform"
   },
   {
     id: "abhivyakti-film",
@@ -308,7 +313,8 @@ export const events: Event[] = [
       textColor: "slate-700"
     },
     icon: `<path fill-rule="evenodd" d="M1.5 5.625c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v12.75c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 18.375V5.625zm1.5 0v1.5c0 .207.168.375.375.375h1.5a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-1.5A.375.375 0 003 5.625zm16.125-.375a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h1.5A.375.375 0 0021 7.125v-1.5a.375.375 0 00-.375-.375h-1.5zM21 9.375A.375.375 0 0020.625 9h-1.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 00.375-.375v-1.5zm0 3.75a.375.375 0 00-.375-.375h-1.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 00.375-.375v-1.5zm0 3.75a.375.375 0 00-.375-.375h-1.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 00.375-.375v-1.5zM4.875 18.75a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-1.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h1.5zM3.375 15h1.5a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-1.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375zm0-3.75h1.5a.375.375 0 00.375-.375v-1.5A.375.375 0 004.875 9h-1.5A.375.375 0 003 9.375v1.5c0 .207.168.375.375.375zm4.125 0a.75.75 0 000 1.5h9a.75.75 0 000-1.5h-9z" clip-rule="evenodd" />`,
-    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />`
+    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdbQ3Uz22Rd6wDbZN4mqbf3Oh7jmh-6c1mkNr6nP41Xbz28Sg/viewform"
   },
   {
     id: "masterchef-gla",
@@ -423,13 +429,14 @@ export const events: Event[] = [
       textColor: "purple-700"
     },
     icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />`,
-    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />`
+    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd7XsrHYp3B16xR4vcG0oaqZ2EVXoAg0k-eTgfq2muVFw5Xug/viewform"
   },
   {
     id: "echo-2025",
     title: "ECHO 2K25 – Engage | Challenge | Harness | Orate",
     category: "PUBLIC SPEAKING",
-    // poster: "/echop.jpg",
+     poster: "/echop.jpg",
     quote: "Where words ignite, with prevails, and knowledge conquers!!!",
     description: "Let Literario Club host you to Step into ECHO, the ultimate battle of oratory, and intellect. From legendary speeches to uncovering lies, simplifying the complex to rapid-fire showdowns—do you have what it takes to win?",
     guidelines: [
@@ -488,7 +495,8 @@ export const events: Event[] = [
       textColor: "blue-700"
     },
     icon: `<path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" /><path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" />`,
-    secondaryIcon: `<path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z" />`
+    secondaryIcon: `<path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdLKX3_CycE9yZGlBwLUbG6rCNVpj-ySJ95tKtWjF3VbpYvBg/viewform"
   },
   {
     id: "mehendi-nail-art",
@@ -593,7 +601,8 @@ export const events: Event[] = [
       textColor: "orange-700"
     },
     icon: `<path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />`,
-    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />`
+    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScaXlcqDiAuJMchyrYa4XpfKK35xRC9oAUj7xd9bbMABLkr5w/viewform"
   },
   {
     id: "battle-of-bands",
@@ -663,7 +672,8 @@ export const events: Event[] = [
       textColor: "purple-600"
     },
     icon: `<path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />`,
-    secondaryIcon: `<path d="M9 9.348c0 .804.603 1.352 1.328 1.328 9.542-.309 9.534-15.336 0-15.652C9.603-5 9 -4.452 9 -3.648v13zm1.212-11.12c6.649.227 6.65 9.007 0 9.237V-1.772zM7.5-2.25a.75.75 0 01.75.75v14.5a.75.75 0 01-1.5 0v-14.5a.75.75 0 01.75-.75zm12 7a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5a.75.75 0 01.75-.75zM12 8.25a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0v-5.5a.75.75 0 01.75-.75zm12-4.5a.75.75 0 01.75.75v9.5a.75.75 0 01-1.5 0v-9.5a.75.75 0 01.75-.75z" />`
+    secondaryIcon: `<path d="M9 9.348c0 .804.603 1.352 1.328 1.328 9.542-.309 9.534-15.336 0-15.652C9.603-5 9 -4.452 9 -3.648v13zm1.212-11.12c6.649.227 6.65 9.007 0 9.237V-1.772zM7.5-2.25a.75.75 0 01.75.75v14.5a.75.75 0 01-1.5 0v-14.5a.75.75 0 01.75-.75zm12 7a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5a.75.75 0 01.75-.75zM12 8.25a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0v-5.5a.75.75 0 01.75-.75zm12-4.5a.75.75 0 01.75.75v9.5a.75.75 0 01-1.5 0v-9.5a.75.75 0 01.75-.75z" />`,
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSdjfhJLKsdhjfksdhfKJSHF/viewform"
   },
   {
     id: "battle-of-singing",
@@ -733,7 +743,8 @@ export const events: Event[] = [
       textColor: "violet-700"
     },
     icon: `<path d="M9 9.348c0 .804.603 1.352 1.328 1.328 9.542-.309 9.534-15.336 0-15.652C9.603-5 9 -4.452 9 -3.648v13zm1.212-11.12c6.649.227 6.65 9.007 0 9.237V-1.772zM7.5-2.25a.75.75 0 01.75.75v14.5a.75.75 0 01-1.5 0v-14.5a.75.75 0 01.75-.75zm12 7a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5a.75.75 0 01.75-.75zM12 8.25a.75.75 0 01.75.75v5.5a.75.75 0 01-1.5 0v-5.5a.75.75 0 01.75-.75zm12-4.5a.75.75 0 01.75.75v9.5a.75.75 0 01-1.5 0v-9.5a.75.75 0 01.75-.75z" />`,
-    secondaryIcon: `<path d="M12 3.75a.75.75 0 00-1.5 0v6.5a.75.75 0 001.5 0v-6.5zm1.25 8.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm4-15a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5zM14.25 6a3.25 3.25 0 116.5 0 3.25 3.25 0 01-6.5 0zm-12.5 0a3.25 3.25 0 116.5 0 3.25 3.25 0 01-6.5 0zM5 16.75a.75.75 0 000 1.5h14a.75.75 0 000-1.5H5z" />`
+    secondaryIcon: `<path d="M12 3.75a.75.75 0 00-1.5 0v6.5a.75.75 0 001.5 0v-6.5zm1.25 8.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm4-15a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5zM14.25 6a3.25 3.25 0 116.5 0 3.25 3.25 0 01-6.5 0zm-12.5 0a3.25 3.25 0 116.5 0 3.25 3.25 0 01-6.5 0zM5 16.75a.75.75 0 000 1.5h14a.75.75 0 000-1.5H5z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf6xQEom_kPdzsSYHw5a-B1K6dLp8f45FTZO6mGyhVFdR3Rcw/viewform"
   },
   {
     id: "sanskriti-sangam",
@@ -808,7 +819,8 @@ export const events: Event[] = [
       textColor: "green-700"
     },
     icon: `<path d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" /><path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z" clip-rule="evenodd" /><path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />`,
-    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />`
+    secondaryIcon: `<path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe54qR1ttYStq-hZLfg5fGkimXudAwjX5I0hd78tWbHA9hNfQ/viewform?usp=sharing"
   },
   {
     id: "fashion-show",
@@ -903,7 +915,8 @@ export const events: Event[] = [
       textColor: "rose-700"
     },
     icon: `<path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-12c.128 0 .254.016.375.047l8 2A.999.999 0 0 1 22 7v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9.528l-6 1.5V12a1 1 0 0 1-1 1h-1v8h2a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2h2v-8H9a1 1 0 0 1-1-1v-.972l-6-1.5V13a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7c0-.441.293-.83.712-.948l8-2A1.17 1.17 0 0 1 9 4h.5V2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V4z" />`,
-    secondaryIcon: `<path d="M2.75 3a.75.75 0 000 1.5h18.5a.75.75 0 000-1.5H2.75zM6.5 8c0-.966.784-1.75 1.75-1.75h7.5c.966 0 1.75.784 1.75 1.75v2.5A1.75 1.75 0 0115.75 12h-7.5A1.75 1.75 0 016.5 10.5V8zm1.75-.25a.25.25 0 00-.25.25v2.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-2.5a.25.25 0 00-.25-.25h-7.5zm-4 5.5a.75.75 0 000 1.5h18.5a.75.75 0 000-1.5H4.25z" />`
+    secondaryIcon: `<path d="M2.75 3a.75.75 0 000 1.5h18.5a.75.75 0 000-1.5H2.75zM6.5 8c0-.966.784-1.75 1.75-1.75h7.5c.966 0 1.75.784 1.75 1.75v2.5A1.75 1.75 0 0115.75 12h-7.5A1.75 1.75 0 016.5 10.5V8zm1.75-.25a.25.25 0 00-.25.25v2.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-2.5a.25.25 0 00-.25-.25h-7.5zm-4 5.5a.75.75 0 000 1.5h18.5a.75.75 0 000-1.5H4.25z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeJUNpb8DRA1x2chX5HpNdQj2bfcb_vDnZd5bxHcR_S1lIK_A/viewform"
   },
   {
     id: "battle-of-wits",
@@ -973,7 +986,8 @@ export const events: Event[] = [
       textColor: "blue-700"
     },
     icon: `<path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z" />`,
-    secondaryIcon: `<path d="M3.75 2.5a.75.75 0 00-.75.75v16.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75V3.25a.75.75 0 00-.75-.75H3.75zM2 3.25A2.25 2.25 0 014.25 1h15.5A2.25 2.25 0 0122 3.25v16.5A2.25 2.25 0 0119.75 22H4.25A2.25 2.25 0 012 19.75V3.25zm10.5 7a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 3a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />`
+    secondaryIcon: `<path d="M3.75 2.5a.75.75 0 00-.75.75v16.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75V3.25a.75.75 0 00-.75-.75H3.75zM2 3.25A2.25 2.25 0 014.25 1h15.5A2.25 2.25 0 0122 3.25v16.5A2.25 2.25 0 0119.75 22H4.25A2.25 2.25 0 012 19.75V3.25zm10.5 7a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 3a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdDyylOxgKwfS-HdNeJxUsM3-1Hobchey1joh7XfcFYl1d3-w/viewform?usp=send_form"
   },
   {
     id: "colors-of-india",
@@ -1023,7 +1037,8 @@ export const events: Event[] = [
       textColor: "amber-700"
     },
     icon: `<path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />`,
-    secondaryIcon: `<path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />`
+    secondaryIcon: `<path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdjfhJLKsdhjfksdhfKJSHF/viewform"
   },
   {
     id: "drama-competition",
@@ -1097,6 +1112,7 @@ export const events: Event[] = [
       textColor: "indigo-700"
     },
     icon: `<path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-5 8.5l.004-.004L7 10.5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm9.938-.063c.551 0 .999.448.999 1s-.448 1-1 1-1-.448-1-1 .449-1 1.001-1zm-8.37 7.295c-1.147-1.265-.415-2.233.242-2.732.665-.506 1.447-.232 1.932.27.52-.271 1.321-.647 2.258-.647.943 0 1.743.376 2.264.647.484-.502 1.267-.776 1.932-.27.657.5 1.389 1.467.242 2.732-.63.702-1.682 1.112-2.656 1.262-.803.124-1.562.127-1.781.127-.22 0-.98-.003-1.782-.127-.974-.15-2.025-.56-2.656-1.262z" />`,
-    secondaryIcon: `<path d="M13.988 12.582c.292.311.718.515 1.169.515 1.473 0 1.929-1.297 1.929-2.049.76-2.581-.799-2.634-1.881-2.634-.575 0-1.017.337-1.22.653l-.012-.011c.94-3.437-2.344-4.29-3.561-3.862-.136-1.318-1.676-2.194-2.912-2.194-2.405 0-2.564 2.539-1.809 5.023-.65.502-1.102 1.046-1.325 1.669-.786 2.262 1.096 4.802 4.616 3.246.845 1.133 1.953 1.72 3.250 1.72 1.648 0 3.043-.392 4.056-1.076zm-1.856-.293c-.292-.804-.598-1.381-.598-1.381-.647.277-1.176.198-1.176-1.055 0-.946-.258-1.509-.636-1.781-.641-.463-1.674.132-1.674 1.26 0 1.314 1.088 2.03 2.016 2.763.925.734 1.802 1.194 2.068.194zm-6.57-3.779c-.3 0-.543.456-.543 1.02s.243 1.02.543 1.02.543-.456.543-1.02-.243-1.02-.543-1.02z" />`
+    secondaryIcon: `<path d="M13.988 12.582c.292.311.718.515 1.169.515 1.473 0 1.929-1.297 1.929-2.049.76-2.581-.799-2.634-1.881-2.634-.575 0-1.017.337-1.22.653l-.012-.011c.94-3.437-2.344-4.29-3.561-3.862-.136-1.318-1.676-2.194-2.912-2.194-2.405 0-2.564 2.539-1.809 5.023-.65.502-1.102 1.046-1.325 1.669-.786 2.262 1.096 4.802 4.616 3.246.845 1.133 1.953 1.72 3.250 1.72 1.648 0 3.043-.392 4.056-1.076zm-1.856-.293c-.292-.804-.598-1.381-.598-1.381-.647.277-1.176.198-1.176-1.055 0-.946-.258-1.509-.636-1.781-.641-.463-1.674.132-1.674 1.26 0 1.314 1.088 2.03 2.016 2.763.925.734 1.802 1.194 2.068.194zm-6.57-3.779c-.3 0-.543.456-.543 1.02s.243 1.02.543 1.02.543-.456.543-1.02-.243-1.02-.543-1.02z" />`,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfitI__wyb2YbuP3tALEbVKAyuVrJNIHyGQx4C7WONfk5dVsA/viewform"
   }
 ];
